@@ -30,18 +30,22 @@
             font-size: 2em;
             margin-bottom: 10px;
         }
-        h2 {
+        h2, h3 {
             font-size: 1.5em;
             margin-top: 0;
-            margin-bottom: 0px; /* Reduced bottom margin */
-        }
-        h3 {
-            margin-top: 0;
-            margin-bottom: 0px; /* Reduced bottom margin */
+            margin-bottom: 10px; /* Adjusted bottom margin for consistency */
         }
         p {
             line-height: 1.6;
-            margin-top: 0px; /* Reduced top margin */
+            margin: 0 0 10px 0; /* Adjusted margins */
+        }
+        ul {
+            line-height: 1.6;
+            margin-top: 0;
+            margin-bottom: 10px; /* Adjusted margins */
+        }
+        ul ul {
+            margin-left: 20px; /* Indentation for nested lists */
         }
         .section {
             margin-bottom: 30px;
@@ -66,7 +70,6 @@
     <div class="container">
         <div class="sidebar">
             <h1>Johan Ølgaard</h1>
-            <p></p>
             <div class="section">
                 <h2>About Me</h2>
                 <p>Currently doing a master's in economics at the University of Copenhagen</p>
@@ -83,7 +86,7 @@
                 <ul class="project-list">
                     <li>
                         <a href="https://github.com/johanoelgaard/AdvMacroHetAgent">Advanced Macroeconomics: Heterogeneous Agent Models</a>
-                        <p>Created as part of the Advanced Macroeconomics course at the University of Copenhagen, I utilise Python, to numerically solve complex HANC and HANK models, providing insights into macroeconomic dynamics.</p>
+                        <p>Created as part of the Advanced Macroeconomics course at the University of Copenhagen, I utilize Python to numerically solve complex HANC and HANK models, providing insights into macroeconomic dynamics.</p>
                     </li>
                     <li>
                         <a href="https://github.com/johanoelgaard/ECON148">Data Science for Economists</a>
@@ -97,29 +100,32 @@
                 <ul>
                     <li>MSc in Economics, University of Copenhagen (August 2023 - Present). Preliminary GPA: 12.0/12</li>
                     <li>Visiting Student, University of California, Berkeley (January 2024 - May 2024). GPA: 4.0/4</li>
-                    <li>BSc in Economics, University of Copenhagen (August 2020 - July 2023). GPA: 11.1/12</li>
-                    <ul>
-                        <li>Thesis: Optimal Monetary Policy in a Fixed Currency Regime: A Two-Economy Macroeconomic Model. Grade: 12/12</li>
-                    </ul>
+                    <li>BSc in Economics, University of Copenhagen (August 2020 - July 2023). GPA: 11.1/12
+                        <ul>
+                            <li>Thesis: Optimal Monetary Policy in a Fixed Currency Regime: A Two-Economy Macroeconomic Model. Grade: 12/12</li>
+                        </ul>
+                    </li>
                 </ul>
                 
                 <h3>Professional Experience</h3>
                 <ul>
                     <li>Senior Data and Analytics Consultant, Devoteam Data Driven (March 2021 - Present)</li>
-                    <li>Platoon Commander, Danish Defence (August 2018 - Present)</li>
-                    <ul>
-                        <li>Army Reveserve (September 2020 - Present)</li>
-                        <li>Royal Life Guards (July 2019 - June 2020)</li>
-                    </ul>
+                    <li>Platoon Commander, Danish Defence (August 2018 - Present)
+                        <ul>
+                            <li>Army Reserve (September 2020 - Present)</li>
+                            <li>Royal Life Guards (July 2019 - June 2020)</li>
+                        </ul>
+                    </li>
                 </ul>
                 
                 <h3>Voluntary Work</h3>
                 <ul>
-                    <li>Polit Case Competition (May 2022 - December 2023)</li>
-                    <ul> 
-                        <li>President (July 2023 - December 2023)</li>
-                        <li>Finance & Accounting (May 2022 - June 2023)</li>
-                    </ul>
+                    <li>Polit Case Competition (May 2022 - December 2023)
+                        <ul> 
+                            <li>President (July 2023 - December 2023)</li>
+                            <li>Finance & Accounting (May 2022 - June 2023)</li>
+                        </ul>
+                    </li>
                 </ul>
                 
                 <h3>Awards & Accomplishments</h3>
