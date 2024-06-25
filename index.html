@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johan Ølgaard's GitHub Page</title>
+    <title>Johan Oelgaard's GitHub Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,6 +40,20 @@
         .section {
             margin-bottom: 30px;
         }
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li {
+            margin-bottom: 15px;
+        }
+        .project-list a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +74,16 @@
         <div class="content">
             <div class="section">
                 <h2>GitHub Projects</h2>
-                <p>Here you can list and describe some of the projects you have worked on. You can link to your repositories and provide a brief overview of each project.</p>
+                <ul class="project-list">
+                    <li>
+                        <a href="https://github.com/johanoelgaard/AdvMacroHetAgent">Advanced Macroeconomics: Heterogeneous Agent Models</a>
+                        <p>Created as part of the Advanced Macroeconomics course at the University of Copenhagen, I utilise Python, to numerically solve complex HANC and HANK models, providing insights into macroeconomic dynamics.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/johanoelgaard/ECON148">Data Science for Economists</a>
+                        <p>My repository for ECON 148 Data Science for Economists at UC Berkeley. This collection includes weekly labs and projects, culminating in a replication paper of the study "Sell Low and Buy High: Arbitrage and Local Price Effects in Kenyan Markets" by Marshall Burke, Lauren Falcao Bergquist, and Edward Miguel.</p>
+                    </li>
+                </ul>
             </div>
             <div class="section">
                 <h2>Curriculum Vitae</h2>
