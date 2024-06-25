@@ -1,1 +1,78 @@
-Hello World
+
+Here's an example HTML structure for your GitHub page that includes a section for personal information on the left and space for GitHub projects and a CV on the right:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Ølgaard's GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 25%;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .content {
+            padding: 20px;
+            width: 75%;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Johan Ølgaard</h1>
+            <p>Welcome to my GitHub page!</p>
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Here you can add some personal information about yourself, such as your background, interests, and professional experience.</p>
+            </div>
+            <div class="section">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>GitHub Projects</h2>
+                <p>Here you can list and describe some of the projects you have worked on. You can link to your repositories and provide a brief overview of each project.</p>
+            </div>
+            <div class="section">
+                <h2>Curriculum Vitae</h2>
+                <p>In this section, you can provide a link to your CV or include a downloadable version of it.</p>
+                <p><a href="path/to/your/CV.pdf" download>Download my CV</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
