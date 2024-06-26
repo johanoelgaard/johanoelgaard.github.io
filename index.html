@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johan Ølgaard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            min-height: 100vh;
-        }
-        .container {
-            display: flex;
-            width: 100%;
-        }
-        .sidebar {
-            background-color: #f4f4f4;
-            padding: 20px;
-            width: 25%;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        }
-        .content {
-            padding: 20px;
-            width: 75%;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 0;
-            margin-bottom: 10px; /* Adjusted bottom margin for consistency */
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 0;
-            margin-bottom: 5px; /* Adjusted bottom margin for consistency */
-        }
-        p {
-            line-height: 1.6;
-            margin: 0 0 10px 0; /* Adjusted margins */
-        }
-        ul {
-            line-height: 1.6;
-            margin-top: 0;
-            margin-bottom: 10px; /* Adjusted margins */
-        }
-        ul ul {
-            margin-left: 20px; /* Indentation for nested lists */
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        a {
-            text-decoration: none;
-            color: #0366d6; /* Set link color globally */
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .project-list {
-            list-style-type: none;
-            padding: 0;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Johan Ølgaard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .sidebar {
+                background-color: #f4f4f4;
+                padding: 20px;
+                width: 100%;
+                box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            }
+            .content {
+                padding: 20px;
+                width: 100%;
+            }
+            h1 {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 1.5em;
+                margin-top: 0;
+                margin-bottom: 10px; /* Adjusted bottom margin for consistency */
+            }
+            h3 {
+                font-size: 1.2em;
+                margin-top: 0;
+                margin-bottom: 5px; /* Adjusted bottom margin for consistency */
+            }
+            p {
+                line-height: 1.6;
+                margin: 0 0 10px 0; /* Adjusted margins */
+            }
+            ul {
+                line-height: 1.6;
+                margin-top: 0;
+                margin-bottom: 10px; /* Adjusted margins */
+            }
+            ul ul {
+                margin-left: 20px; /* Indentation for nested lists */
+            }
+            .section {
+                margin-bottom: 30px;
+            }
+            a {
+                text-decoration: none;
+                color: #0366d6; /* Set link color globally */
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .project-list {
+                list-style-type: none; /* Removes default bullet points */
+                padding: 0; /* Removes default padding */
+            }
+    
+            /* Media query for screens larger than 600px */
+            @media (min-width: 600px) {
+                .container {
+                    flex-direction: row;
+                }
+                .sidebar {
+                    width: 25%;
+                }
+                .content {
+                    width: 75%;
+                }
+            }
+        </style>
+    </head>
 <body>
     <div class="container">
         <div class="sidebar">
